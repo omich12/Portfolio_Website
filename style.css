@@ -1,0 +1,308 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0f2ff, #f9f9ff);
+    /* soft blue-white gradient */
+    color: #1a1a1a;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: all 0.4s ease;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);             
+  -webkit-backdrop-filter: blur(10px);  */
+    width: 100%;
+    transition: background-color 0.3s ease;
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3f3d9d;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Nav Links Center ===== */
+.nav-links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-links li a:hover {
+    color: #ff7f00;
+    text-decoration: underline;
+}
+
+/* ===== Hire Me Button Right ===== */
+.navbar-btn {
+    background-color: #ffa500;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-btn:hover {
+    background-color: #ff7f00;
+    transform: scale(1.05);
+}
+
+
+
+/* ===== Hero Section ===== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    min-height: 102vh;
+    /* background: linear-gradient(to right, #eaf2ff, #ffffff); subtle gradient */
+    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+}
+
+.hero-left {
+    flex: 1;
+    animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-left h1 span {
+    color: #6a1b9a;
+    font-weight: 800;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    background-color: #ffa500;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ff7f00;
+    transform: scale(1.08);
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeInRight 1.2s ease-in-out;
+}
+
+.hero-right img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+
+}
+
+.social-icons a {
+    font-size: 28px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6a1b9a;
+    transform: scale(1.2);
+}
+
+/* .animated-girl {
+    position: absolute;
+    right: 50px;
+    animation: moveLeftRight 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+} */
+
+/* ===== Animations ===== */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* ===== About Section (Two-Column) ===== */
+.about-two-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 60px;
+    background: linear-gradient(to right, #fff, #eaf2ff42);
+    gap: 180px;
+}
+
+.about-left {
+    flex: 1 1 50px;
+    max-width: 600px;
+}
+
+.about-left h2 {
+    font-size: 2.4rem;
+    color: #4a148c;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.about-left p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.about-left strong {
+    color: #ff6f00;
+}
+
+.cv-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 46px;
+}
+
+.resume-btn {
+    background-color: #ffa500;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-btn:hover {
+    background-color: #ff6f00;
+    transform: scale(1.05);
+}
+
+/* ===== About Right Image ===== */
+.about-right {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .about-two-column {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .about-left h2,
+    .about-left p {
+        text-align: center;
+    }
+
+    .cv-btn-wrapper {
+        justify-content: center;
+    }
+}
