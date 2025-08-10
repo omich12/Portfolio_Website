@@ -213,3 +213,96 @@ body {
         transform: translateX(0);
     }
 }
+
+
+/* ===== About Section (Two-Column) ===== */
+.about-two-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 60px;
+    background: linear-gradient(to right, #fff, #eaf2ff42);
+    gap: 180px;
+}
+
+.about-left {
+    flex: 1 1 50px;
+    max-width: 600px;
+}
+
+.about-left h2 {
+    font-size: 2.4rem;
+    color: #4a148c;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.about-left p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.about-left strong {
+    color: #ff6f00;
+}
+
+.cv-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 46px;
+}
+
+.resume-btn {
+    background-color: #ffa500;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-btn:hover {
+    background-color: #ff6f00;
+    transform: scale(1.05);
+}
+
+/* ===== About Right Image ===== */
+.about-right {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .about-two-column {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .about-left h2,
+    .about-left p {
+        text-align: center;
+    }
+
+    .cv-btn-wrapper {
+        justify-content: center;
+    }
+}
